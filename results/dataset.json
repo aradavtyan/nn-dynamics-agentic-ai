@@ -1,0 +1,23 @@
+{
+  "source": "https://www.nonlinearbenchmark.org/benchmarks/silverbox",
+  "sha256": "5c7413a52255af0cb4e2f93fb6903beb92b08965ba1e6ad0a6ffedfed8477ed4",
+  "mat_variables": {
+    "Ovld1": [
+      1,
+      1
+    ],
+    "Ovld2": [
+      1,
+      1
+    ],
+    "V2": [
+      1,
+      131072
+    ],
+    "V1": [
+      1,
+      131072
+    ]
+  },
+  "zero_test_rmse": 0.060491854406981314
+}

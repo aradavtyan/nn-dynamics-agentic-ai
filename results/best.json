@@ -1,0 +1,19 @@
+{
+  "name": "w32_lr0.001_h32",
+  "widths": [
+    32,
+    32
+  ],
+  "learning_rate": 0.001,
+  "rollout_length": 32,
+  "training_steps": 600,
+  "seed": 42,
+  "batch_size": 32,
+  "pretrain_steps": 1200,
+  "optimizer": "Adam",
+  "elapsed_time": 12.507871500999954,
+  "result_status": "completed",
+  "train_rmse": 0.002332453578115664,
+  "test_rmse": 0.008616101247742852,
+  "zero_test_rmse": 0.060491854406981314
+}

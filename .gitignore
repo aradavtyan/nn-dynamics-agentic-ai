@@ -1,0 +1,12 @@
+.venv/
+.venv-audit/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env
+data/*
+results/**/*.pt
+!results/w32_lr0.001_h32.pt
+results/agent_runs/
+homework1_submission.zip
