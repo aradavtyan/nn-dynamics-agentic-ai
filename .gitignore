@@ -8,5 +8,7 @@ __pycache__/
 data/*
 results/**/*.pt
 !results/w32_lr0.001_h32.pt
-results/agent_runs/
 homework1_submission.zip
+
+/report/
+/homework1.pdf
