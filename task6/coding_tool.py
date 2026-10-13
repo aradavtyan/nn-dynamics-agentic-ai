@@ -1,4 +1,4 @@
-"""Run generated Python with path checks and resource limits, not a hostile-code sandbox."""
+
 
 import json
 import math
@@ -53,8 +53,8 @@ class CodingTool:
         directory.mkdir()
         path = directory / "solution.py"
         path.write_text(source)
-        # Child does not inherit credentials. Audit checks are practical safeguards;
-        # native extension code is not contained by Python's audit mechanism.
+        
+        
         bootstrap = """import sys, os, runpy, resource
 from pathlib import Path
 work=Path(sys.argv[1]).resolve(); root=Path(sys.argv[2]).resolve()
@@ -114,8 +114,8 @@ runpy.run_path(str(work/'solution.py'),run_name='__main__')
             "timed_out": timed_out,
             "verified": False,
         }
-        # A printed claim alone never authorizes finish. Independently execute the
-        # trusted full-free-run evaluator on the newly generated checkpoint.
+        
+        
         candidate = directory / "candidate.pt"
         if code == 0 and candidate.exists():
             try:

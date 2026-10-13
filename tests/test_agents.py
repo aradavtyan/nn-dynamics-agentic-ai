@@ -10,7 +10,7 @@ from task6.graph import build
 
 
 class FakeAgents:
-    """Infrastructure mock only; never counted as a real model experiment."""
+
 
     def __init__(self, roles):
         self.roles = iter(roles)

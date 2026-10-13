@@ -195,7 +195,7 @@ Paths are relative to `/home/ara/Desktop/AI-Course-homeworks/homework_1`:
 - Real Task 6 blocker trace: `results/task6_trace.json`.
 - Final PDF: `report/homework1.pdf`.
 - This verification report: `report/verification.md`.
-- Submission archive: `homework1_submission.zip` (refreshed after the audit).
+- Submission archive: omitted from the GitHub project; the source and final PDF are retained.
 - GitHub repository: **not published; no verified URL**.
 
 All eight PDF pages were rendered and visually inspected after regeneration.

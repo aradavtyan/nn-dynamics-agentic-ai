@@ -31,7 +31,7 @@ def train(config, output_dir="results"):
     u, y = load()
     u = torch.tensor(u[:SPLIT], dtype=torch.float32)
     y = torch.tensor(y[:SPLIT], dtype=torch.float32)
-    # Local polynomial derivative estimates use only training observations.
+    
     velocity = torch.tensor(
         savgol_filter(y.numpy(), 9, 5, deriv=1, delta=DT), dtype=torch.float32
     )

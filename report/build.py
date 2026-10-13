@@ -1,4 +1,4 @@
-"""Build the written submission from proofs and saved measured results."""
+
 
 import json
 from pathlib import Path

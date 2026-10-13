@@ -27,7 +27,7 @@ class InputAcceleration(torch.nn.Module):
 
 
 def test_interpolation_and_alignment():
-    # u(t)=t, y(0)=v(0)=0 => y(t)=t^3/6 exactly for RK4.
+    
     state = torch.tensor([0.0, 0.0], dtype=torch.float64)
     final = step(
         InputAcceleration(), state, torch.tensor(0.0), torch.tensor(0.1), dt=0.1
@@ -50,7 +50,7 @@ def test_gradient_and_shapes():
 
 
 def test_no_test_leakage_or_boundary_reset():
-    # The prediction interface receives only y0/y1, never a measured output record.
+    
     u, y = load()
     changed = y.copy()
     changed[SPLIT:] += 100
@@ -68,7 +68,7 @@ def test_no_test_leakage_or_boundary_reset():
         .numpy()
     )
     np.testing.assert_array_equal(p, direct)
-    # A forced reset would break this constant-velocity trajectory at the split.
+    
     constant = predict(model, np.zeros(4096), 0.0, DT)
     np.testing.assert_allclose(
         constant[[SPLIT - 1, SPLIT, SPLIT + 1]],
